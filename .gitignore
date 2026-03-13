@@ -1,0 +1,28 @@
+# 忽略Python编译文件
+__pycache__/
+*.pyc
+
+# 忽略测试结果和报告
+allure-results/
+htmlcov/
+reports/
+screenshots/
+logs/
+
+# 忽略测试缓存
+.pytest_cache/
+.coverage
+
+# 忽略调试文件
+pytestdebug.log
+
+# 忽略环境配置文件
+.env
+
+# 忽略IDE相关文件
+.vscode/
+.idea/
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
