@@ -1,0 +1,37 @@
+# 测试环境配置
+environments:
+  # 开发环境
+  dev:
+    base_url: http://localhost:8081
+    api_prefix: /prod-api
+    database:
+      host: localhost
+      port: 3306
+      username: root
+      password: password
+      database: ruoyi
+  
+  # 测试环境
+  test:
+    base_url: http://test-ruoyi.example.com
+    api_prefix: /prod-api
+    database:
+      host: test-db.example.com
+      port: 3306
+      username: test
+      password: test123
+      database: ruoyi_test
+  
+  # 生产环境
+  prod:
+    base_url: http://prod-ruoyi.example.com
+    api_prefix: /prod-api
+    database:
+      host: prod-db.example.com
+      port: 3306
+      username: prod
+      password: prod123
+      database: ruoyi_prod
+
+# 当前环境
+current_env: dev

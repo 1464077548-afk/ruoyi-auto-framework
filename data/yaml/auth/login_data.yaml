@@ -1,0 +1,43 @@
+# 登录测试数据
+login:
+  # 正常登录
+  valid:
+    username: "admin"
+    password: "admin123"
+    expected: "登录成功"
+  
+  # 用户名错误
+  invalid_username:
+    username: "test"
+    password: "admin123"
+    expected: "用户名或密码错误"
+  
+  # 密码错误
+  invalid_password:
+    username: "admin"
+    password: "123456"
+    expected: "用户名或密码错误"
+  
+  # 空用户名
+  empty_username:
+    username: ""
+    password: "admin123"
+    expected: "用户名不能为空"
+  
+  # 空密码
+  empty_password:
+    username: "admin"
+    password: ""
+    expected: "密码不能为空"
+  
+  # 空用户名和密码
+  empty_both:
+    username: ""
+    password: ""
+    expected: "用户名不能为空"
+  
+  # 锁定账户
+  locked:
+    username: "locked"
+    password: "admin123"
+    expected: "账户已被锁定"

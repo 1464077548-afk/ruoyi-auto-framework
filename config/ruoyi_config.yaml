@@ -1,0 +1,47 @@
+# RuoYi系统配置
+ruoyi:
+  # 系统基础URL
+  base_url: http://localhost:8081
+  
+  # 登录配置
+  login:
+    username: admin
+    password: admin123
+    login_url: /login
+    index_url: /index
+  
+  # API配置
+  api:
+    prefix: /prod-api
+    timeout: 30
+    headers:
+      Content-Type: application/json
+  
+  # 页面配置
+  pages:
+    login: LoginPage
+    home: HomePage
+    user: UserPage
+    role: RolePage
+    menu: MenuPage
+    dept: DeptPage
+    config: ConfigPage
+    dict: DictPage
+    log: LogPage
+    notice: NoticePage
+  
+  # 测试配置
+  test:
+    retry_count: 3
+    retry_interval: 2
+    screenshot_on_failure: true
+    video_record: false
+    
+  # 浏览器配置
+  browser:
+    headless: false
+    slow_mo: 0
+    timeout: 30000
+    viewport:
+      width: 1920
+      height: 1080
